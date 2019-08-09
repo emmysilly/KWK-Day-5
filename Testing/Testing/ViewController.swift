@@ -16,24 +16,27 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var typeTextHere2: UITextField!
     
+    @IBOutlet weak var typeTextHere3: UITextField!
+    
     @IBAction func sudmitButton(_ sender: UIButton) {
         if let thereIsText = typeTextHere.text {
-            var string = typeTextHere.text
-            var string2 = typeTextHere2.text
-            
-           thereIsText = "Hi"
-            
-            //var welcome1 = "\(string1) \(string2)"
-            textAppearsHere.text = thereIsText
+            var firstText = thereIsText
+            if let thereIsText2 = typeTextHere2.text {
+                var secondText = thereIsText2
+                if let thereIsText3 = typeTextHere3.text {
+                    var thirdText = thereIsText3
+            textAppearsHere.text = firstText + " " + secondText + " " + thirdText
+                }
         }
     }
-    
+        
+}
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
 }
+
 
