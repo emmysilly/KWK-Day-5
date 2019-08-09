@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fd3-qf-l5P">
+            <objects>
+                <viewController id="WiN-gt-txo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WpZ-wh-vJE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrG-ba-Eos">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Fake Instagram" id="jgW-ar-Rnz">
+                                        <barButtonItem key="leftBarButtonItem" title="Go Back" id="Hkq-SM-hyk">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="tyd-FT-V9h"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yrG-ba-Eos" firstAttribute="trailing" secondItem="s3c-gL-TlC" secondAttribute="trailing" id="3X8-jn-gV4"/>
+                            <constraint firstItem="yrG-ba-Eos" firstAttribute="leading" secondItem="s3c-gL-TlC" secondAttribute="leading" id="X0k-ww-2YZ"/>
+                            <constraint firstItem="yrG-ba-Eos" firstAttribute="top" secondItem="s3c-gL-TlC" secondAttribute="top" id="edg-02-R5J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s3c-gL-TlC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Omh-UR-JIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-568.1159420289855" y="-139.28571428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Day_5_WarmUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pusheen!" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v3k-r6-Y9o">
+                                <rect key="frame" x="99" y="344" width="217" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccO-Ih-C3P">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <items>
+                                    <navigationItem title="Fake Instagram" id="FC3-E5-biz">
+                                        <barButtonItem key="leftBarButtonItem" title="More" id="gPl-jE-Yro">
+                                            <connections>
+                                                <segue destination="WiN-gt-txo" kind="show" id="pV7-Ab-BLQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ccO-Ih-C3P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8g3-Hd-mzr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v3k-r6-Y9o" secondAttribute="trailing" constant="98" id="E0f-Lc-rKV"/>
+                            <constraint firstItem="ccO-Ih-C3P" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aiM-Ge-eNO"/>
+                            <constraint firstItem="ccO-Ih-C3P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bZQ-Wu-WLK"/>
+                            <constraint firstItem="v3k-r6-Y9o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="ph5-xF-FF8"/>
+                            <constraint firstItem="ccO-Ih-C3P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zcq-EX-85Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="57F-8y-bBE">
+                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </objects>
+            <point key="canvasLocation" x="379.71014492753625" y="-139.28571428571428"/>
+        </scene>
+    </scenes>
+</document>
