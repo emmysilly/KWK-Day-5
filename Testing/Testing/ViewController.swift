@@ -20,11 +20,11 @@ class ViewController: UIViewController {
     
     @IBAction func sudmitButton(_ sender: UIButton) {
         if let thereIsText = typeTextHere.text {
-            var firstText = thereIsText
+            let firstText = thereIsText
             if let thereIsText2 = typeTextHere2.text {
-                var secondText = thereIsText2
+                let secondText = thereIsText2
                 if let thereIsText3 = typeTextHere3.text {
-                    var thirdText = thereIsText3
+                    let thirdText = thereIsText3
             textAppearsHere.text = firstText + " " + secondText + " " + thirdText
                 }
         }
@@ -32,11 +32,29 @@ class ViewController: UIViewController {
         
 }
     
+    @IBOutlet weak var typeTextHere4: UITextField!
+    
+    @IBOutlet weak var textAppearsHere2: UILabel!
+    
+    
+    @IBAction func passwordButton(_ sender: UIButton) {
+        if let thereIsText2 = typeTextHere4.text {
+            textAppearsHere.text = thereIsText2
+            if typeTextHere4.text == "Emely"{
+                textAppearsHere2.text = "You Got it!"
+            }
+        else{
+            textAppearsHere2.text = "Incorrect!"
+        }
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
 }
 
 
